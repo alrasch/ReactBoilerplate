@@ -8,11 +8,12 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function BasicComponent() {
+export default function BasicComponent({message}) {
+	const classes = useStyles();
 
 	return (
-		<Grid container item>
-			Basic component
+		<Grid container item className={classes.root}>
+			{message}
 		</Grid>
 	);
 };

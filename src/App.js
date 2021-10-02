@@ -1,6 +1,5 @@
 import React, {useCallback} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import './css/common.css';
 import BasicComponent from "./component/BasicComponent";
@@ -27,6 +26,7 @@ function App() {
 	return (
 		<div className={classes.root} id={"app-container"} key={"app-container"} >
 			<Grid container spacing={0}>
+				<BasicComponent message={state.message} />
 			</Grid>
 		</div>
 	);
